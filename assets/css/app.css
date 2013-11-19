@@ -458,8 +458,8 @@ color:rgba(246, 154, 194, 0.75);
 }
 
 .well {
-  background-color: rgba(0,60,76,.1);
-  border: 1px solid rgba(0,6,0,1);
+  background-color: rgba(246, 154, 194, 0.1);
+  border: 1px solid rgba(246, 154, 194, 1);
 }
 
 .panel-info {
