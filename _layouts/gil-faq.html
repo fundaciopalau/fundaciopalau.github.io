@@ -1,0 +1,36 @@
+---
+layout: default
+class: gil-article
+slug: blog
+---
+
+{% assign author = site.authors[page.author] %}
+
+<main class="vx-masthead" id="content" role="main">
+
+  <div class="container">
+
+    <div class="body-content blog">        
+
+      <ul class="breadcrumb">
+        <li><a href="{{ site.base_url }}/">Home</a></li>
+        <li><a href="{{ site.base_url }}/gil-faq">Ask Gil</a></li>
+        <li class="active">{{page.title}}</li>
+      </ul>
+      
+      <div class="row">
+        <div class="col-sm-12 col-lg-12 blog-list">
+          <article class="article" role="main">
+            {% include social.html %}
+            {{ content }}
+          </article>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</main>

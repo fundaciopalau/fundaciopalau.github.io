@@ -1,0 +1,29 @@
+name:             'Jo em rebel·lo'
+url:              'http://www.joemrebelo.cat'
+markdown:         rdiscount
+pygments:         true
+
+baseurl:
+permalink:        /:title
+
+authors:
+ joemrebelo:
+  name: Jo em rebel·lo
+  display_name: Jo em rebel·lo
+  email: info@joemrebelo.cat
+  web: http://www.joemrebelo.cat/
+ gil:
+  name: Gil
+  display_name: Gil
+  email: gil@joemrebelo.cat
+  web: http://www.joemrebelo.cat/
+
+# Server
+exclude:          ["LICENSE", "README.md",]
+port:             4000
+
+# Prose
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://joemrebelo.github.io/'
+  media: 'assets/img'

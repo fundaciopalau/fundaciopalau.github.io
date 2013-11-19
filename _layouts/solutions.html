@@ -1,0 +1,53 @@
+---
+layout: default
+slug: solutions
+---
+
+<main class="vx-masthead" id="content" role="main">
+
+  <div class="container">
+
+    <div class="body-content solutions">
+
+      {% if page.title == 'Solutions' %}
+      {% else if %}      
+      {% include nav-solutions.html %}
+      {% endif %}
+
+      {% if page.title == 'Solutions' %}
+      {% else %}
+      <div class="page-header">
+        <h1>{% if page.icon-url %}<img src="{{site.baseurl}}/assets/img/{{page.icon-url}}"/>{% endif %} {{page.title}} {% if page.subitle %}, {{page.subtitle}} {% endif %}</h1>
+      </div>
+      {% endif %}
+
+          <article role="main">
+            {% if page.featured-img-url %}
+            <p class="pull-right hidden-xs text-center featured-img-url"><img class="img-thumbnail" src="{{site.baseurl}}/assets/img/{{page.featured-img-url}}"></p>
+            {% endif %}
+            {{ content }}
+          </article>   
+
+        {% if page.register %}
+
+        <div class="well well-sm {% if page.title == 'Solutions' %}hidden-xs hidden-sm hidden-md hidden-lg{% endif %}">
+
+          <h2 class="text-center">New to Jo em rebel·lo? Please, <a href='http://itest.joemrebelo.cat/signup' rel="external" target="_blank" class='mailto btn btn-info' title='Please, sign up'><span class='icon-signin icon-white'></span> Get Started</a></h2>
+
+        </div>
+
+        {% else if %}
+
+        <div class="well well-sm {% if page.title == 'Solutions' %}hidden-xs hidden-sm hidden-md hidden-lg{% endif %}">
+
+          <h2 class="text-center"><p>Do you need further information? Please, <a href='mailto:info@joemrebelo.cat?subject={{page.title}} - Jo em rebel·lo.es&body=I would like further information on: http://www.joemrebelo.cat{{page.url}}' class='mailto btn btn-default' title='Contact sales'><span class='icon-envelope icon-white'></span> Contact sales</a></h2>
+
+        </div>
+
+        {% endif %}
+
+    </div>
+
+  </div>
+
+</main>

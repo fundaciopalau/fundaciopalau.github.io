@@ -1,0 +1,59 @@
+---
+layout: default
+class: markets-market
+slug: markets
+---
+
+<main class="vx-masthead" id="content" role="main">
+
+  <div class="container">
+
+    <div class="body-content markets">
+
+      {% if page.title == 'Markets' %}
+      {% else if %}
+      {% if page.title == 'References' or page.title == 'Pricing' %}
+      <ul class="breadcrumb">
+        <li><a href="{{ site.base_url }}/">Home</a></li>
+        <li><a href="{{ site.base_url }}/markets">Markets</a></li>
+        {% if page.title != 'Markets' %}
+        <li class="active">{{page.title}}</li>
+        {% endif %}
+      </ul>
+      {% else if %}
+      {% include nav-markets.html %}
+      {% endif %}
+      {% endif %}
+
+      {% if page.title == 'Markets' %}
+      {% else %}
+      <div class="page-header">
+        <h1>{% if page.icon-url %}<img src="{{site.baseurl}}/assets/img/{{page.icon-url}}"/>{% endif %} {% if page.title == 'Pricing' %}<strong>{{page.title}}</strong> {% else if %}<strong>{{page.title}}</strong>, {{page.subtitle}} {% endif %}</h1>
+      </div>
+      {% endif %}
+
+      <article role="main">
+        {% if page.featured-img-url %}
+          <p class="pull-right hidden-xs text-center featured-img-url"><img class="img-thumbnail" src="{{site.baseurl}}/assets/img/{{page.featured-img-url}}"></p>
+        {% endif %}
+        {{ content }}
+      </article>
+
+      {% if page.title == 'Pricing' %}
+      {% else if %}
+      {% if page.title == 'Wind & Site' or page.title == 'Forecast' or page.title == 'Markets' %}
+      <div class="well well-sm">
+        <h2 class="text-center">Are you interested? Please, <a href='http://itest.joemrebelo.cat/signup' rel="external" target="_blank" class='mailto btn btn-info' title='Please, sign up'><span class='icon-signin icon-white'></span> Get started</a></h2>
+      </div>
+      {% else if %}
+      <div class="well well-sm">
+        <h2 class="text-center">Can we help you? <a href='mailto:info@joemrebelo.cat?subject={{page.title}} - Jo em rebel·lo.es&body=I would like further information on: http://www.joemrebelo.cat{{page.url}}' class='mailto btn btn-default' title='Contact sales'><span class='icon-envelope icon-white'></span> Contact sales</a></p>
+      </div>
+      {% endif %}
+      {% endif %}
+
+    </div>
+
+  </div>
+
+</main>
