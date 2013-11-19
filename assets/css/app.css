@@ -26,6 +26,10 @@ a:hover {
   border-bottom:/*1px solid rgb(0,0,0)*/ none;
 }
 
+body {
+  border-top: 10px solid #000000;
+}
+
 body.solutions-solution .page-header {
   border-bottom:none;
 }
