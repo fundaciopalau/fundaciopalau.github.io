@@ -23,7 +23,7 @@ a:hover {
 }
 
 .page-header {
-  border-bottom:/*1px solid rgb(0,60,76)*/ none;
+  border-bottom:/*1px solid rgb(0,0,0)*/ none;
 }
 
 body.solutions-solution .page-header {
@@ -55,7 +55,7 @@ body.solutions-solution .page-header {
 
 #myCarouselHomeJoEmRebelo.carousel .item {
   min-height: 425px;
-  background-color: rgba(0,60,76,1);
+  background-color: rgba(0,6,0,1);
 }
 
 #myCarouselHomeJoEmRebelo.carousel .item h1 {
@@ -194,7 +194,7 @@ body.solutions-solution .page-header {
 }
 
 .blau-joemrebelo {
-  /*background: rgba(0,60,76,1);*/
+  /*background: rgba(0,6,0,1);*/
 }
 
 #cf3 {
@@ -264,7 +264,7 @@ p.joemrebelo-icon.title-icon a {
   text-transform: uppercase;
   font-size: 30px;
   font-family:'joemrebeloregular', serif;
-  color: rgba(0,60,76,1);
+  color: rgba(0,6,0,1);
   letter-spacing: 2px;
   margin:0;
 }
@@ -295,13 +295,13 @@ h1.title-icon a:hover {
 
 .jumbotron {
   border-radius:0;
-  color:rgb(0,60,76);
+  color:rgb(0,0,0);
   background:rgba(246, 154, 194, 0.75);
 }
 
 .jumbotron.case-study {
   color:rgb(172,203,218);
-  background:rgb(0,60,76);
+  background:rgb(0,0,0);
 }
 
 .jumbotron-blue-joemrebelo {
@@ -331,17 +331,13 @@ h1.title-icon a:hover {
   background:#ffffff;
 }
 
-body {
-  font-family:'joemrebeloregular', serif;
-}
-
 h1,h2,h3 {
-  font-family:'joemrebeloregular', serif;
-  color:rgb(0,60,76);
+  font-family:'aller_displayregular', sans-serif;
+  color:rgb(0,0,0);
+  text-transform: lowercase;
 }
 h4,h5,h6,.navbar-default .navbar-nav > li > a {
-  font-family:'joemrebeloregular', serif;
-  color:rgb(0,60,76);
+  color:rgb(0,0,0);
 }
 
 h4 time {
@@ -409,19 +405,15 @@ header[role="banner"] div.navbar {
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   background:rgba(0, 60, 76, 0.25);
-  color:rgb(0,60,76);
+  color:rgb(0,0,0);
 }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background:rgb(0,60,76); 
+  background:rgb(0,0,0); 
 }
 
 .nav-tabs {
     border-bottom:none;
-}
-
-footer[role="contentinfo"] {
-  font-family:'joemrebeloregular', serif;
 }
 
 .oxygen-bg {background:#010101;
@@ -431,13 +423,13 @@ border-collapse: collapse;
 }
 
 .footer-bg {
-  background:rgba(0,60,76,1);
+  background:rgba(0,6,0,1);
    padding:1em 1em 0;
-   color:#BFCBCF;
+   color:rgba(246, 154, 194, 1);
 }
 .footer-bg hr, hr {
 background-color:rgb(172,203,218);
-border:rgb(0,60,76) 1px solid;
+border:rgb(0,0,0) 1px solid;
 border-style: none none solid;
 color:#fff;
 }
@@ -446,7 +438,7 @@ color:#fff;
 margin:20px 0 5px;
 }
 .footer-bg a {
-color:#BFCBCF;
+color:rgba(246, 154, 194, 0.75);
 }
 .footer-bg-2 {
   background:rgba(231,101,87,.25);
@@ -467,7 +459,7 @@ color:#BFCBCF;
 
 .well {
   background-color: rgba(0,60,76,.1);
-  border: 1px solid rgba(0,60,76,1);
+  border: 1px solid rgba(0,6,0,1);
 }
 
 .panel-info {
@@ -516,7 +508,7 @@ overflow: hidden;
 }
 
 .card.card-gil{
-  background: rgba(0,60,76,.1);
+  background: rgba(246, 154, 194, .1);
 }
 
 .card .card-title {
@@ -540,32 +532,32 @@ a.next-ten {
     color:#fff;
 }
 .card:hover {
-  background-color:#BFCBCF;
+  background-color:rgba(246, 154, 194, 1);
   color:#fff;
-  -webkit-transition:background-color .2s, color .2s;
-     -moz-transition:background-color .2s, color .2s;
-       -o-transition:background-color .2s, color .2s;
-      -ms-transition:background-color .2s, color .2s;
-          transition:background-color .2s,color .2s;
+  -webkit-transition:background-color .5s, color .5s;
+     -moz-transition:background-color .5s, color .5s;
+       -o-transition:background-color .5s, color .5s;
+      -ms-transition:background-color .5s, color .5s;
+          transition:background-color .5s, color .5s;
 }
 
 a.next-ten:hover {
   background: #fff;
   color:#BFCBCF;
-  -webkit-transition:background-color .2s, color .2s;
-     -moz-transition:background-color .2s, color .2s;
-       -o-transition:background-color .2s, color .2s;
-      -ms-transition:background-color .2s, color .2s;
-          transition:background-color .2s,color .2s;
+  -webkit-transition:background-color .5s, color .5s;
+     -moz-transition:background-color .5s, color .5s;
+       -o-transition:background-color .5s, color .5s;
+      -ms-transition:background-color .5s, color .5s;
+          transition:background-color .5s, color .5s;
 }
 
 .card:hover h2,.card:hover h4 {
   color:#fff;
-  -webkit-transition:color .2s;
-     -moz-transition:color .2s;
-       -o-transition:color .2s;
-      -ms-transition:color .2s;
-          transition:color .2s;
+  -webkit-transition:color .5s;
+     -moz-transition:color .5s;
+       -o-transition:color .5s;
+      -ms-transition:color .5s;
+          transition:color .5s;
 }
 
 .article {
