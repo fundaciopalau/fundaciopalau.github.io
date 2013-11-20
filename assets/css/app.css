@@ -27,7 +27,7 @@ a:hover {
 }
 
 body {
-  border-top: 10px solid #000000;
+  padding-top: 25px;
 }
 
 body.solutions-solution .page-header {
@@ -336,9 +336,10 @@ h1.title-icon a:hover {
 }
 
 h1,h2,h3 {
-  font-family:'aller_displayregular', sans-serif;
+  font-family:'Helvetica Neue Bold Condensed',"Helvetica Neue",Helvetica,Arial,sans-serif;
   color:rgb(0,0,0);
-  text-transform: lowercase;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 h4,h5,h6,.navbar-default .navbar-nav > li > a {
   color:rgb(0,0,0);
@@ -391,7 +392,12 @@ h4 time {
 
 header[role="banner"] div.navbar {
   padding-top: 12.5px;
-  min-height: 75px;
+  min-height: 85px;
+  background: #000000;
+  color: #ffffff;
+}
+header[role="banner"] div.navbar a{
+  color: #ffffff;
 }
 .navbar{
   background: #ffffff;
@@ -418,6 +424,10 @@ header[role="banner"] div.navbar {
 
 .nav-tabs {
     border-bottom:none;
+}
+
+main[role="main"] {
+margin-top: 50px;
 }
 
 .oxygen-bg {background:#010101;
@@ -716,14 +726,17 @@ body.vx-blog .ox-masthead div.body-content p.gil {
 }
 header[role="banner"] div.navbar {
   padding-top: 25px;
-  height: 100px;
-  font-size: 1.25em;
+  height: 58px;
 }
 
 
 .container>.navbar-header, 
 .container>.navbar-collapse {
   margin-top: -15px;
+}
+
+main[role="main"] {
+margin-top: 35px;
 }
 
 .navbar-default .navbar-nav > .active > a, 
