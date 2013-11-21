@@ -342,7 +342,7 @@ h1,h2,h3 {
   font-weight: bold;
 }
 h4,h5,h6,.navbar-default .navbar-nav > li > a {
-  color:rgb(0,0,0);
+  color:#bbbbbb;
 }
 
 h4 time {
